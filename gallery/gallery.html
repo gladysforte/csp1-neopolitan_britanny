@@ -23,57 +23,66 @@
 	<link rel="stylesheet" type="text/css" href="../assets/css/style.css">
 	<link rel="stylesheet" type="text/css" href="../assets/css/lightbox.min.css">
 
+	<link
+		rel="stylesheet"
+		href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css"
+	/>
+
 </head>
 <body>
 
-	<div class="bg-4">    
-		<h1 class="font1 d-flex justify-content-center ptext">Gallery</h1>
-	</div>
-	
+	<div class="banner-home-page animate__animated animate__fadeIn">
 
-	<nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
-		<a class="navbar-brand font1" href="../home/home.html">
-			<img src="../assets/img/logo.jpg" width="200" height="35" alt="">
-		</a>
-		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-			<span class="navbar-toggler-icon"></span>
-		</button>
-		<div class="collapse navbar-collapse w-100 order-3" id="navbarNavDropdown">
-			<ul class="navbar-nav ml-auto">
-				<li class="nav-item">
-					<a class="nav-link" href="../home/home.html">Home</a>
-				</li>
-				<li class="nav-item">
-					<a class="nav-link" href="../facilities/facilities.html">Facilities</a>
-				</li>
-				<li class="nav-item">
-					<a class="nav-link" href="#">Gallery</a>
-				</li>
-				<li class="nav-item">
-					<a class="nav-link" href="../package/package.html">Packages</a>
-				</li>
-				<li class="nav-item">
-					<a class="nav-link" href="../contact/contact.html">Contact Us</a>
-				</li>
+		<nav class="navbar navbar-expand-lg topnav-pages">
 
-			</ul>
+			<a class="navbar-brand" href="../index.html">
+				<img src="../assets/img/landing_page/banner_logo-trans.png" alt="" style="width: 50%;">
+			</a>
+			
+			<button class="navbar-toggler" style="background-color: white;" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+			<div class="collapse navbar-collapse order-3" id="navbarNavDropdown" style="float: right;">
+				<ul class="navbar-nav nav-fill w-100">
+					<li class="nav-item">
+						<a class="nav-link link" href="../home/home.html">Home</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link link" href="../facilities/facilities.html">Facilities</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link link active" href="../gallery/gallery.html">Gallery</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link link" href="../package/package.html">Packages</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link link" href="../contact/contact.html">Contact Us</a>
+					</li>
+				</ul>
+			</div>
+		</nav>
+
+		<div class="mt-3 pt-3">
+			<h1 class="font1 d-flex justify-content-center center-p">Gallery</h1>
 		</div>
-	</nav>
+		
+	</div>
 
-	<main id="wrapper" class="section-white">
+	<main id="wrapper" class="section-white mt-3 pt-3 mb-2 pb-2">
 		<div class="container">
-			<div class="row" id="galleryID">
+			<div class="row mb-3 pb-3" id="galleryID">
 				
 				<div class="nav col-md-12 d-flex justify-content-center pl-2 pr-2 mt-3" id="v-pills-tab" role="tablist" aria-orientation="horizontal">
-					<a class="col-sm-12 col-md-6 col-lg-2 nav-link btn btn-outline-info mr-1 ml-2 active" id="v-pills-home-tab" data-toggle="pill" href="#v-pills-home" role="tab" aria-controls="v-pills-home" aria-selected="true">Birthdays</a>
-					<a class="col-sm-12 col-md-6 col-lg-2 nav-link btn btn-outline-info mr-1 ml-2" id="v-pills-profile-tab" data-toggle="pill" href="#v-pills-profile" role="tab" aria-controls="v-pills-profile" aria-selected="false">Company Events</a>
-					<a class="col-sm-12 col-md-6 col-lg-2 nav-link btn btn-outline-info mr-1 ml-2" id="v-pills-messages-tab" data-toggle="pill" href="#v-pills-messages" role="tab" aria-controls="v-pills-messages" aria-selected="false">Debut</a>
-					<a class="col-sm-12 col-md-6 col-lg-2 nav-link btn btn-outline-info mr-1 ml-2" id="v-pills-settings-tab" data-toggle="pill" href="#v-pills-settings" role="tab" aria-controls="v-pills-settings" aria-selected="false">Wedding</a>
+					<a class="col-sm-12 col-md-6 col-lg-2 nav-link btn btn-outline-warning mr-1 ml-2 active" id="v-pills-home-tab" data-toggle="pill" href="#v-pills-home" role="tab" aria-controls="v-pills-home" aria-selected="true">Birthdays</a>
+					<a class="col-sm-12 col-md-6 col-lg-2 nav-link btn btn-outline-warning mr-1 ml-2" id="v-pills-profile-tab" data-toggle="pill" href="#v-pills-profile" role="tab" aria-controls="v-pills-profile" aria-selected="false">Company Events</a>
+					<a class="col-sm-12 col-md-6 col-lg-2 nav-link btn btn-outline-warning mr-1 ml-2" id="v-pills-messages-tab" data-toggle="pill" href="#v-pills-messages" role="tab" aria-controls="v-pills-messages" aria-selected="false">Debut</a>
+					<a class="col-sm-12 col-md-6 col-lg-2 nav-link btn btn-outline-warning mr-1 ml-2" id="v-pills-settings-tab" data-toggle="pill" href="#v-pills-settings" role="tab" aria-controls="v-pills-settings" aria-selected="false">Wedding</a>
 				</div>
 				<div class="tab-content col-md-12" id="v-pills-tabContent">
 					<div class="tab-pane fade show active" id="v-pills-home" role="tabpanel" aria-labelledby="v-pills-home-tab">
 
-						<div class="row">
+						<div class="row mt-3">
 
 							<div class="col-sm-12 col-md-6 col-lg-4">
 								<div class="mt-3 mb-3">	
@@ -121,7 +130,7 @@
 					</div>
 					<div class="tab-pane fade" id="v-pills-profile" role="tabpanel" aria-labelledby="v-pills-profile-tab">
 
-						<div class="row">
+						<div class="row mt-3">
 
 							<div class="col-sm-12 col-md-6 col-lg-4">
 								<div class="mt-3 mb-3">
@@ -170,7 +179,7 @@
 					</div>
 					<div class="tab-pane fade" id="v-pills-messages" role="tabpanel" aria-labelledby="v-pills-messages-tab">
 
-						<div class="row">
+						<div class="row mt-3">
 
 							<div class="col-sm-12 col-md-6 col-lg-4">
 								<div class="mt-3 mb-3">
@@ -219,7 +228,7 @@
 					</div>
 					<div class="tab-pane fade" id="v-pills-settings" role="tabpanel" aria-labelledby="v-pills-settings-tab">
 
-						<div class="row">
+						<div class="row mt-3">
 
 							<div class="col-sm-12 col-md-6 col-lg-4">
 								<div class="mt-3 mb-3">

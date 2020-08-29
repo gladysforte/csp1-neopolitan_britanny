@@ -21,11 +21,144 @@ body, html {
 	height: 100%;
 }
 
+.landing-page {
+	min-height: 100vh;
+	background-image: linear-gradient(
+	to right,
+	  rgba(0,0,0,0.9),
+	  rgba(0,0,0,0.4)
+	),
+	url("../img/parallax/bg1.jpg");
+	background-position: center;
+	background-size: cover;
+	position: relative;
+}
+
+.banner-home-page {
+	min-height: 70vh;
+	background-image: linear-gradient(
+	to right,
+	  rgba(0,0,0,0.9),
+	  rgba(0,0,0,0.4)
+	),
+	url("../img/parallax/bg2.jpg");
+	background-position: center;
+	background-size: cover;
+	position: relative;
+}
+
+.banner-facilites-page {
+	min-height: 70vh;
+	background-image: linear-gradient(
+	to right,
+	  rgba(0,0,0,0.9),
+	  rgba(0,0,0,0.4)
+	),
+	url("../img/parallax/main_banner.jpg");
+	background-position: center;
+	background-size: cover;
+	position: relative;
+}
+
+.center-logo {
+	position: relative;
+	top: 50%;
+	width: 60%;
+	text-align: center;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+
+.center-home-image {
+	position: relative;
+	top: 50%;
+	width: 90%;
+	text-align: center;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+
+/* NavBar css */
+
+.topnav {	
+	overflow: hidden;
+}
+
+.topnav a {
+	float: left;
+	display: block;
+	color: #f2f2f2;
+	text-align: center;
+	/* padding: 14px 16px; */
+	text-decoration: none;
+	font-size: 16px;
+	border-bottom: 3px solid transparent;
+}
+
+.topnav a:hover {
+	border-bottom: 3px solid #F5B447;
+}
+  
+.topnav a.active {
+	border-bottom: 3px solid #F5B447;
+}
+
+/* Navbar for pages */
+
+.topnav-pages {	
+	overflow: hidden;
+}
+
+.topnav-pages a {
+	float: left;
+	display: block;
+	color: #f2f2f2;
+	text-align: center;
+	/* padding: 14px 16px; */
+	text-decoration: none;
+	font-size: 16px;
+	border-bottom: 3px solid transparent;
+}
+
+.topnav-pages .link:hover {
+	border-bottom: 3px solid #F5B447;
+}
+  
+.topnav-pages .link.active {
+	border-bottom: 3px solid #F5B447;
+}
+
 /*
 *
 *  Code for Parallax Effect Background
 *
 */
+
+.center-p {
+	position: absolute;
+	top: 50%;
+	width: 90%;
+	text-align: left;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+
+.bottom-p {
+    position: fixed;
+    bottom: 5%;
+    width: 90%;
+}
+
+.dot {
+	height: 25px;
+	width: 25px;
+	background-color: #bbb;
+	border-radius: 50%;
+	display: inline-block;
+	text-align: center;
+	margin: 3px;
+}
+
 
 .bg-1, .bg-2, .bg-3, .bg-4 {
 	position: relative;
@@ -40,7 +173,6 @@ body, html {
 	background-image: url('./../img/parallax/bg1.jpg');
 	min-height: 100%;
 	width: 100%;
-
 }
 
 .bg-2 {
@@ -66,14 +198,7 @@ body, html {
 }
 
 
-.ptext {
-	position: absolute;
-	top: 50%;
-	width: 100%;
-	text-align: center;
-	left: 50%;
-	transform: translate(-50%, -50%);
-}
+
 
 
 
@@ -113,11 +238,22 @@ body, html {
 /* This is for Index.HTML  */
 
 div#landing {
-	width: 100%;
+	/* width: 100%;
 	height: 100vh;
 	background-image: url('./../img/landing_page/landing_page_blur.jpg');
-	background-size: 100% 100%;
+	background-size: 100% 100%; */
 	/*position: fixed;*/
+
+	min-height: 100vh;
+	/* background-image: linear-gradient(
+	  to right,
+	  rgba(0,0,0,0.9),
+	  rgba(0,0,0,0.4)
+	),
+	url('./../img/landing_page/landing_page_blur.jpg'); */
+	background-position: center;
+	background-size: cover;
+	position: relative;
 }
 
 div#landing > div#content {
@@ -126,9 +262,6 @@ div#landing > div#content {
 	background-color: rgba(0, 0, 0, 0.5);
 }
 
-
-
-
 div.cover-container > main > h1 {
 	font-family: 'Playball', cursive;
 	color: white;
@@ -136,7 +269,6 @@ div.cover-container > main > h1 {
 	font-style: normal;
 	text-shadow: 0 0 3px #f0fa04;
 	text-shadow: 0 0 7px black;
-	
 }
 
 div#landing > div > p {
@@ -182,43 +314,6 @@ header#mainHeader > nav > div > ul {
 	text-transform: uppercase;
 	color: white;
 	margin-left: 10px;
-}
-
-
-/* Navbar Style*/
-
-
-nav ul li a {
-	position:relative;
-	z-index: 1;
-	font-weight: bold;
-}
-nav ul li a:hover {
-	color: white;
-}
-nav ul li a:after {
-	display: block;
-	position: absolute;
-	top: 0;
-	left: 0;
-	bottom: 0;
-	right: 0;
-	margin: auto;
-	width: 100%;
-	/*height: 3px;*/
-	content: '.';
-	color: transparent;
-	background: #f3bfe2;
-	visibility: none;
-	opacity: 0;
-	z-index: -1;
-	transition: .5s;
-}
-
-nav ul li a:hover:after {
-	opacity: 1;
-	visibility: visible;
-	height: 100%;
 }
 
 
@@ -274,107 +369,17 @@ nav ul li a:hover:after {
 
 
 
-// Extra small devices (portrait phones, less than 576px)
-@media (max-width: 575.98px) {
-	header#mainHeader > h3 {
-		font-size: 14px;
-	}
-
-	.pimg1, .pimg2, .pimg3{
-		background-attachment:scroll;
-	}
-
-
-/*	iframe {
-		width: 300;
-		height: 300; 
-	}*/
-
-	div.cover-container > main > h1 {
-
-		font-size: 2rem;
-
-	}
-	div#galleryID > div > div > div > div > div > a > img {
-		width: 293px;
-
-	}
-
-
+@media screen and (max-width : 320px)
+{
+  p
+  {
+    font:10px;
+  }
 }
-
-
-
-
-// Small devices (landscape phones, 576px and up)
-@media (min-width: 576px) and (max-width: 767.98px) {
-
-	header#mainHeader > h3 {
-		font-size: 14px;
-	}
-
-	div.cover-container > main > h1 {
-		
-		font-size: 2rem;
-
-	}
-
-	div#galleryID > div > div > div > div > div > a > img {
-		width: 293px;
-
-	}
-
-}
-
-// Medium devices (tablets, 768px and up)
-@media (min-width: 768px) and (max-width: 991.98px) {
-/*	iframe {
-		width: 600;
-		height: 450;
-	}*/
-
-	div.cover-container > main > h1 {
-		
-		font-size: 4rem;
-
-	}
-
-
-
-}
-
-// Large devices (desktops, 992px and up)
-@media (min-width: 992px) and (max-width: 1199.98px) {
-/*
-	iframe {
-		width: 600;
-		height: 450;
-	}*/
-
-	div.cover-container > main > h1 {
-
-		font-size: 4rem;
-	}
-
-}
-
-// Extra large devices (large desktops, 1200px and up)
-@media (min-width: 1200px) {
-/*	iframe {
-		width: 600;
-		height: 450;
-	}*/
-
-	div.cover-container > main > h1 {
-
-		font-size: 4rem;
-
-	}
-
-	div.cover-container > main > h1 {
-
-		font-size: 4rem;
-	}
-
-
+@media screen and (max-width : 1204px)
+{
+  body
+  {
+    font:10rem;
+  }
 }

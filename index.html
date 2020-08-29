@@ -10,7 +10,6 @@
 	<link rel="icon" type="icon" href="./favicon_1.ico">
 	<link rel="shortcut icon" type="icon" href="./favicon_1.ico">
 	
-
 	<!-- import google fonts -->
 	<link href="https://fonts.googleapis.com/css?family=Playball|Slabo+27px" rel="stylesheet">
 
@@ -22,34 +21,64 @@
 
 	<!-- Import Custom Stylesheet -->
 	<link rel="stylesheet" type="text/css" href="./assets/css/style.css">
+
+	<link
+		rel="stylesheet"
+		href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css"
+	/>
 	
 </head>
-<body>
+<body class="animate__animated animate__fadeIn">
 
-	<div class="cover-container d-flex w-100 h-100 mx-auto flex-column bg-1">
-		<header class="masthead mb-auto">
-			<div class="inner p-3">
-				<img src="./assets/img/nb.jpg" width="100" height="100">
+	<div class="d-flex bd-highlight m-0 p-0">
+		<div class="p-2 flex-fill bd-highlight w-50" style="background-color: #1C2031; height: 100vh;">
+			<img src="./assets/img/landing_page/banner_logo.PNG" alt="banner logo" class="center-logo">
+		</div>
+
+		<div class="p-2 flex-fill bd-highlight w-50 landing-page" style="background-color: black; height: 100vh;">
+			
+			<nav class="navbar navbar-expand-lg topnav ml-3 mr-3 pr-3 pl-3">
+				<button class="navbar-toggler" style="background-color: white;" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+					<span class="navbar-toggler-icon"></span>
+				</button>
+				<div class="collapse navbar-collapse w-100 order-3" id="navbarNavDropdown">
+					<ul class="navbar-nav nav-fill w-100">
+						<li class="nav-item">
+							<a class="nav-link" href="./home/home.html">Home</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="./facilities/facilities.html">Facilities</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="./gallery/gallery.html">Gallery</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="./package/package.html">Packages</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="./contact/contact.html">Contact Us</a>
+						</li>
+					</ul>
+				</div>
+			</nav>
+			
+			<div class="center-p ml-1 mr-3 pr-3 pl-1">
+				<h2 style="color: white;">Welcome</h2>
+				<p style="color: white; text-size">Neopolitan Britanny Events Place brings celebrations to the next level,
+					may it be a grand event or an intimate get together. 
+					It is the perfect venue for weddings, debuts, birthdays, corporate events, seminars, and more.</p>
 			</div>
-		</header>
-
-		<main role="main" class="inner cover text-center" style="background-color: rgba(0, 0, 0, 0.5);">
-			<h1 class="cover-heading font1">Neopolitan Britanny Events Place</h1>
-			<p class="lead text-white">AWESOME VENUES + VIP SERVICES FOR 100 to 300.</p>
-			<p class="lead">
-				<a href="./home/home.html" class="btn btn-lg btn-secondary">Explore more</a>
-			</p>
-		</main>
-
-		<footer class="mastfoot mt-auto">
-			<div class="inner">
-				<!-- 	<p>Cover template for <a href="https://getbootstrap.com/">Bootstrap</a>, by <a href="https://twitter.com/mdo">@mdo</a>.</p> -->
+			
+			<div class="bottom-p ml-3 mr-3 pr-3 pl-3">
+				<p style="color: white;" class="m-0 p-0">Book Reservation Now</p>
+				<p style="color: white;">Call Us : (+63) 9123 456789</p>
+				<span class="dot"><i class="fab fa-facebook"></i></span>
+				<span class="dot"><i class="fab fa-twitter-square"></i></span>
+				<span class="dot"><i class="fab fa-youtube"></i></i></span>
+				<span class="dot"><i class="fab fa-instagram"></i></i></span>
 			</div>
-		</footer>
+		</div>
 	</div>
-<!-- 		</div>
-	</div>
--->
 
 <!-- imports bootstrap scripts -->
 
@@ -59,6 +88,11 @@
 
 <!-- imports custom script -->
 <script src="./assets/js/script.js"></script>
+
+<script src="./assets/js/wow.min.js"></script>
+<script>
+	new WOW().init();
+</script>
 
 </body>
 </html>
